@@ -1,0 +1,1162 @@
+{
+   "WorkflowVersion":{
+      "WorkflowVersionID":86090,
+      "MajorVersion":5,
+      "MinorVersion":1
+   },
+   "WorkflowStages":[
+      {
+         "WorkflowVersionID":86090,
+         "WorkflowStageID":162382,
+         "WorkflowStageDraftID":162382,
+         "Title":"Requestor Submission",
+         "DisplayName":"Draft",
+         "StageType":"RequestorSubmission",
+         "SeqNo":1,
+         "IsSLA":null,
+         "IsEndStage":false,
+         "IsApprovedStage":false,
+         "HasStageReview":false,
+         "IsAllowDelegation":false,
+         "HasSubStage":null,
+         "NotificationCount":0,
+         "ReminderCount":0,
+         "IntegrationCount":0,
+         "DeleteLock":false,
+         "RequestorSubLock":true,
+         "Options":{
+            "DisplaySequence":0,
+            "IsAllowComment":false,
+            "IsAllowCommentInGeneralComment":false,
+            "IsAllowCommentCustomize":false,
+            "IsAllowEditOtherFields":false,
+            "IsAllowTrigger":false,
+            "IsSavableByApprover":false,
+            "HasNoAssigneeAction":false,
+            "NoAssigneeActionEvents":null,
+            "HasSameApproverAction":false,
+            "HasAvoidSkipSameApproverAction":false,
+            "SameApproverActionEvents":null,
+            "IsMandatoryComment":false,
+            "ActionButtons":null,
+            "MinCharacter":0,
+            "CustomizeComments":[
+
+            ],
+            "ApproverStages":[
+
+            ],
+            "AssignOption":null,
+            "AssignOptionNumber":0,
+            "TitleLabel":{
+               "ValueType":"custom",
+               "Code":null,
+               "Details":[
+                  {
+                     "Code":null,
+                     "Language":"en-US",
+                     "Value":"Requestor Submission",
+                     "OldValue":null
+                  },
+                  {
+                     "Code":null,
+                     "Language":"zh-CN",
+                     "Value":"申请者提交",
+                     "OldValue":null
+                  },
+                  {
+                     "Code":null,
+                     "Language":"id-ID",
+                     "Value":"Pengajuan Pemohon",
+                     "OldValue":null
+                  },
+                  {
+                     "Code":null,
+                     "Language":"ms-MY",
+                     "Value":"Requestor Submission",
+                     "OldValue":null
+                  }
+               ]
+            },
+            "DisplayLabel":{
+               "ValueType":"custom",
+               "Code":null,
+               "Details":[
+                  {
+                     "Code":null,
+                     "Language":"en-US",
+                     "Value":"Draft",
+                     "OldValue":null
+                  },
+                  {
+                     "Code":null,
+                     "Language":"zh-CN",
+                     "Value":"草案",
+                     "OldValue":null
+                  },
+                  {
+                     "Code":null,
+                     "Language":"id-ID",
+                     "Value":"Draft",
+                     "OldValue":null
+                  },
+                  {
+                     "Code":null,
+                     "Language":"ms-MY",
+                     "Value":"Draft",
+                     "OldValue":null
+                  }
+               ]
+            },
+            "IsMModule":true,
+            "SkipMyTaskForSameRequestorApprover":false
+         },
+         "AssignedTos":[
+
+         ],
+         "SequentialAssignedTos":null,
+         "Readers":[
+
+         ],
+         "WorkflowStageTriggers":[
+
+         ],
+         "WorkflowStageSLA":null,
+         "SubStage":null,
+         "WorkflowStageSubs":[
+
+         ],
+         "Actions":[
+            {
+               "WorkflowActionID":177088,
+               "Title":"Submitted",
+               "ActionType":"standard",
+               "DeleteLock":true,
+               "Events":[
+                  {
+                     "EventType":"GotoStage",
+                     "WorkflowStageID":162545,
+                     "StageTitle":"Received by Immediate Superior",
+                     "FieldCode":"",
+                     "FieldValue":""
+                  }
+               ],
+               "EventLists":[
+
+               ],
+               "Options":{
+                  "ButtonName":"Submit",
+                  "ButtonColor":"btn-primary",
+                  "Sequence":"1",
+                  "ConditionFieldCode":null,
+                  "ConditionFieldValue":null,
+                  "ConditionalActionEvent":false,
+                  "SystemAction":true,
+                  "Condition":{
+                     "Field":null,
+                     "FieldCode":null,
+                     "Operator":null,
+                     "Value":null,
+                     "ConditionGroups":[
+
+                     ]
+                  },
+                  "AllowFieldValidation":false,
+                  "FieldValidationGroups":[
+
+                  ],
+                  "TitleLabel":{
+                     "ValueType":"custom",
+                     "Code":null,
+                     "Details":[
+                        {
+                           "Code":null,
+                           "Language":"en-US",
+                           "Value":"Submitted",
+                           "OldValue":null
+                        },
+                        {
+                           "Code":null,
+                           "Language":"zh-CN",
+                           "Value":"提交成功",
+                           "OldValue":null
+                        },
+                        {
+                           "Code":null,
+                           "Language":"id-ID",
+                           "Value":"Diajukan",
+                           "OldValue":null
+                        },
+                        {
+                           "Code":null,
+                           "Language":"ms-MY",
+                           "Value":"Submitted",
+                           "OldValue":null
+                        }
+                     ]
+                  },
+                  "ButtonNameLabel":{
+                     "ValueType":"custom",
+                     "Code":null,
+                     "Details":[
+                        {
+                           "Code":null,
+                           "Language":"en-US",
+                           "Value":"Submit",
+                           "OldValue":null
+                        },
+                        {
+                           "Code":null,
+                           "Language":"zh-CN",
+                           "Value":"提交",
+                           "OldValue":null
+                        },
+                        {
+                           "Code":null,
+                           "Language":"id-ID",
+                           "Value":"Mengajukan",
+                           "OldValue":null
+                        },
+                        {
+                           "Code":null,
+                           "Language":"ms-MY",
+                           "Value":"Submit",
+                           "OldValue":null
+                        }
+                     ]
+                  },
+                  "IsMModule":true
+               },
+               "NotificationCount":0
+            }
+         ],
+         "SequentialCompleteActions":[
+
+         ],
+         "Parallels":[
+
+         ],
+         "ParallelCompletes":[
+
+         ],
+         "ParallelDeleteLock":true,
+         "ParallelSets":[
+
+         ]
+      },
+      {
+         "WorkflowVersionID":86090,
+         "WorkflowStageID":162545,
+         "WorkflowStageDraftID":162545,
+         "Title":"Received by Immediate Superior",
+         "DisplayName":"Received by Immediate Superior",
+         "StageType":"Standard",
+         "SeqNo":2,
+         "IsSLA":false,
+         "IsEndStage":false,
+         "IsApprovedStage":false,
+         "HasStageReview":false,
+         "IsAllowDelegation":false,
+         "HasSubStage":false,
+         "NotificationCount":0,
+         "ReminderCount":0,
+         "IntegrationCount":0,
+         "DeleteLock":false,
+         "RequestorSubLock":false,
+         "Options":{
+            "DisplaySequence":0,
+            "IsAllowComment":false,
+            "IsAllowCommentInGeneralComment":false,
+            "IsAllowCommentCustomize":false,
+            "IsAllowEditOtherFields":false,
+            "IsAllowTrigger":false,
+            "IsSavableByApprover":false,
+            "HasNoAssigneeAction":false,
+            "NoAssigneeActionEvents":[
+
+            ],
+            "HasSameApproverAction":false,
+            "HasAvoidSkipSameApproverAction":false,
+            "SameApproverActionEvents":[
+
+            ],
+            "IsMandatoryComment":false,
+            "ActionButtons":null,
+            "MinCharacter":0,
+            "CustomizeComments":null,
+            "ApproverStages":[
+
+            ],
+            "AssignOption":null,
+            "AssignOptionNumber":0,
+            "TitleLabel":{
+               "ValueType":null,
+               "Code":null,
+               "Details":[
+
+               ]
+            },
+            "DisplayLabel":{
+               "ValueType":null,
+               "Code":null,
+               "Details":[
+
+               ]
+            },
+            "IsMModule":false,
+            "SkipMyTaskForSameRequestorApprover":false
+         },
+         "AssignedTos":[
+
+         ],
+         "SequentialAssignedTos":null,
+         "Readers":[
+
+         ],
+         "WorkflowStageTriggers":[
+
+         ],
+         "WorkflowStageSLA":null,
+         "SubStage":null,
+         "WorkflowStageSubs":[
+
+         ],
+         "Actions":[
+            {
+               "WorkflowActionID":177245,
+               "Title":"Approved",
+               "ActionType":"standard",
+               "DeleteLock":true,
+               "Events":[
+                  {
+                     "EventType":"GotoStage",
+                     "WorkflowStageID":162546,
+                     "StageTitle":"HOD Approval",
+                     "FieldCode":"",
+                     "FieldValue":""
+                  }
+               ],
+               "EventLists":[
+
+               ],
+               "Options":{
+                  "ButtonName":"Approve",
+                  "ButtonColor":"btn-primary",
+                  "Sequence":"1",
+                  "ConditionFieldCode":null,
+                  "ConditionFieldValue":null,
+                  "ConditionalActionEvent":false,
+                  "SystemAction":true,
+                  "Condition":{
+                     "Field":null,
+                     "FieldCode":null,
+                     "Operator":null,
+                     "Value":null,
+                     "ConditionGroups":[
+
+                     ]
+                  },
+                  "AllowFieldValidation":false,
+                  "FieldValidationGroups":[
+
+                  ],
+                  "TitleLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "ButtonNameLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "IsMModule":false
+               },
+               "NotificationCount":0
+            },
+            {
+               "WorkflowActionID":177248,
+               "Title":"Go to PMO",
+               "ActionType":"conditional",
+               "DeleteLock":false,
+               "Events":[
+                  {
+                     "EventType":"GotoStage",
+                     "WorkflowStageID":162547,
+                     "StageTitle":"PMO Endorsement",
+                     "FieldCode":"",
+                     "FieldValue":""
+                  }
+               ],
+               "EventLists":[
+
+               ],
+               "Options":{
+                  "ButtonName":"Go to PMO",
+                  "ButtonColor":"btn-default",
+                  "Sequence":null,
+                  "ConditionFieldCode":null,
+                  "ConditionFieldValue":null,
+                  "ConditionalActionEvent":false,
+                  "SystemAction":false,
+                  "Condition":{
+                     "Field":null,
+                     "FieldCode":null,
+                     "Operator":null,
+                     "Value":null,
+                     "ConditionGroups":[
+                        {
+                           "Conditions":[
+                              {
+                                 "Field":null,
+                                 "FieldCode":"Radio",
+                                 "Operator":"0",
+                                 "Value":[
+                                    "Option 1"
+                                 ],
+                                 "ConditionGroups":[
+
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  "AllowFieldValidation":false,
+                  "FieldValidationGroups":[
+                     {
+                        "Validations":[
+                           {
+                              "ValidationType":"mandatory",
+                              "FieldCode":null
+                           }
+                        ]
+                     }
+                  ],
+                  "TitleLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "ButtonNameLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "IsMModule":true
+               },
+               "NotificationCount":0
+            }
+         ],
+         "SequentialCompleteActions":[
+
+         ],
+         "Parallels":[
+
+         ],
+         "ParallelCompletes":[
+
+         ],
+         "ParallelDeleteLock":true,
+         "ParallelSets":[
+
+         ]
+      },
+      {
+         "WorkflowVersionID":86090,
+         "WorkflowStageID":162546,
+         "WorkflowStageDraftID":162546,
+         "Title":"HOD Approval",
+         "DisplayName":"HOD Approval",
+         "StageType":"Standard",
+         "SeqNo":3,
+         "IsSLA":false,
+         "IsEndStage":false,
+         "IsApprovedStage":false,
+         "HasStageReview":false,
+         "IsAllowDelegation":false,
+         "HasSubStage":false,
+         "NotificationCount":0,
+         "ReminderCount":0,
+         "IntegrationCount":0,
+         "DeleteLock":false,
+         "RequestorSubLock":false,
+         "Options":{
+            "DisplaySequence":0,
+            "IsAllowComment":false,
+            "IsAllowCommentInGeneralComment":false,
+            "IsAllowCommentCustomize":false,
+            "IsAllowEditOtherFields":false,
+            "IsAllowTrigger":false,
+            "IsSavableByApprover":false,
+            "HasNoAssigneeAction":false,
+            "NoAssigneeActionEvents":[
+
+            ],
+            "HasSameApproverAction":false,
+            "HasAvoidSkipSameApproverAction":false,
+            "SameApproverActionEvents":[
+
+            ],
+            "IsMandatoryComment":false,
+            "ActionButtons":null,
+            "MinCharacter":0,
+            "CustomizeComments":null,
+            "ApproverStages":[
+
+            ],
+            "AssignOption":null,
+            "AssignOptionNumber":0,
+            "TitleLabel":{
+               "ValueType":null,
+               "Code":null,
+               "Details":[
+
+               ]
+            },
+            "DisplayLabel":{
+               "ValueType":null,
+               "Code":null,
+               "Details":[
+
+               ]
+            },
+            "IsMModule":false,
+            "SkipMyTaskForSameRequestorApprover":false
+         },
+         "AssignedTos":[
+
+         ],
+         "SequentialAssignedTos":null,
+         "Readers":[
+
+         ],
+         "WorkflowStageTriggers":[
+
+         ],
+         "WorkflowStageSLA":null,
+         "SubStage":null,
+         "WorkflowStageSubs":[
+
+         ],
+         "Actions":[
+            {
+               "WorkflowActionID":177246,
+               "Title":"Approved",
+               "ActionType":"standard",
+               "DeleteLock":true,
+               "Events":[
+                  {
+                     "EventType":"GotoStage",
+                     "WorkflowStageID":162547,
+                     "StageTitle":"PMO Endorsement",
+                     "FieldCode":"",
+                     "FieldValue":""
+                  }
+               ],
+               "EventLists":[
+
+               ],
+               "Options":{
+                  "ButtonName":"Approve",
+                  "ButtonColor":"btn-primary",
+                  "Sequence":"1",
+                  "ConditionFieldCode":null,
+                  "ConditionFieldValue":null,
+                  "ConditionalActionEvent":false,
+                  "SystemAction":true,
+                  "Condition":{
+                     "Field":null,
+                     "FieldCode":null,
+                     "Operator":null,
+                     "Value":null,
+                     "ConditionGroups":[
+
+                     ]
+                  },
+                  "AllowFieldValidation":false,
+                  "FieldValidationGroups":[
+
+                  ],
+                  "TitleLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "ButtonNameLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "IsMModule":false
+               },
+               "NotificationCount":0
+            },
+            {
+               "WorkflowActionID":177249,
+               "Title":"Return to Superior",
+               "ActionType":"standard",
+               "DeleteLock":false,
+               "Events":[
+                  {
+                     "EventType":"GotoStage",
+                     "WorkflowStageID":162545,
+                     "StageTitle":"Received by Immediate Superior",
+                     "FieldCode":"",
+                     "FieldValue":""
+                  }
+               ],
+               "EventLists":[
+
+               ],
+               "Options":{
+                  "ButtonName":"Return to Superior",
+                  "ButtonColor":"btn-default",
+                  "Sequence":null,
+                  "ConditionFieldCode":null,
+                  "ConditionFieldValue":null,
+                  "ConditionalActionEvent":false,
+                  "SystemAction":false,
+                  "Condition":{
+                     "Field":null,
+                     "FieldCode":null,
+                     "Operator":null,
+                     "Value":null,
+                     "ConditionGroups":[
+
+                     ]
+                  },
+                  "AllowFieldValidation":false,
+                  "FieldValidationGroups":[
+                     {
+                        "Validations":[
+                           {
+                              "ValidationType":"mandatory",
+                              "FieldCode":null
+                           }
+                        ]
+                     }
+                  ],
+                  "TitleLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "ButtonNameLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "IsMModule":true
+               },
+               "NotificationCount":0
+            },
+            {
+               "WorkflowActionID":177252,
+               "Title":"Go to Approved",
+               "ActionType":"standard",
+               "DeleteLock":false,
+               "Events":[
+                  {
+                     "EventType":"GotoStage",
+                     "WorkflowStageID":162384,
+                     "StageTitle":"Approved",
+                     "FieldCode":"",
+                     "FieldValue":""
+                  }
+               ],
+               "EventLists":[
+
+               ],
+               "Options":{
+                  "ButtonName":"Go to Approved",
+                  "ButtonColor":"btn-default",
+                  "Sequence":null,
+                  "ConditionFieldCode":null,
+                  "ConditionFieldValue":null,
+                  "ConditionalActionEvent":false,
+                  "SystemAction":false,
+                  "Condition":{
+                     "Field":null,
+                     "FieldCode":null,
+                     "Operator":null,
+                     "Value":null,
+                     "ConditionGroups":[
+
+                     ]
+                  },
+                  "AllowFieldValidation":false,
+                  "FieldValidationGroups":[
+                     {
+                        "Validations":[
+                           {
+                              "ValidationType":"mandatory",
+                              "FieldCode":null
+                           }
+                        ]
+                     }
+                  ],
+                  "TitleLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "ButtonNameLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "IsMModule":true
+               },
+               "NotificationCount":0
+            }
+         ],
+         "SequentialCompleteActions":[
+
+         ],
+         "Parallels":[
+
+         ],
+         "ParallelCompletes":[
+
+         ],
+         "ParallelDeleteLock":true,
+         "ParallelSets":[
+
+         ]
+      },
+      {
+         "WorkflowVersionID":86090,
+         "WorkflowStageID":162547,
+         "WorkflowStageDraftID":162547,
+         "Title":"PMO Endorsement",
+         "DisplayName":"PMO Endorsement",
+         "StageType":"Standard",
+         "SeqNo":4,
+         "IsSLA":false,
+         "IsEndStage":false,
+         "IsApprovedStage":false,
+         "HasStageReview":false,
+         "IsAllowDelegation":false,
+         "HasSubStage":false,
+         "NotificationCount":0,
+         "ReminderCount":0,
+         "IntegrationCount":0,
+         "DeleteLock":false,
+         "RequestorSubLock":false,
+         "Options":{
+            "DisplaySequence":0,
+            "IsAllowComment":false,
+            "IsAllowCommentInGeneralComment":false,
+            "IsAllowCommentCustomize":false,
+            "IsAllowEditOtherFields":false,
+            "IsAllowTrigger":false,
+            "IsSavableByApprover":false,
+            "HasNoAssigneeAction":false,
+            "NoAssigneeActionEvents":[
+
+            ],
+            "HasSameApproverAction":false,
+            "HasAvoidSkipSameApproverAction":false,
+            "SameApproverActionEvents":[
+
+            ],
+            "IsMandatoryComment":false,
+            "ActionButtons":null,
+            "MinCharacter":0,
+            "CustomizeComments":null,
+            "ApproverStages":[
+
+            ],
+            "AssignOption":null,
+            "AssignOptionNumber":0,
+            "TitleLabel":{
+               "ValueType":null,
+               "Code":null,
+               "Details":[
+
+               ]
+            },
+            "DisplayLabel":{
+               "ValueType":null,
+               "Code":null,
+               "Details":[
+
+               ]
+            },
+            "IsMModule":false,
+            "SkipMyTaskForSameRequestorApprover":false
+         },
+         "AssignedTos":[
+
+         ],
+         "SequentialAssignedTos":null,
+         "Readers":[
+
+         ],
+         "WorkflowStageTriggers":[
+
+         ],
+         "WorkflowStageSLA":null,
+         "SubStage":null,
+         "WorkflowStageSubs":[
+
+         ],
+         "Actions":[
+            {
+               "WorkflowActionID":177247,
+               "Title":"Approved",
+               "ActionType":"standard",
+               "DeleteLock":true,
+               "Events":[
+                  {
+                     "EventType":"GotoStage",
+                     "WorkflowStageID":162384,
+                     "StageTitle":"Approved",
+                     "FieldCode":"",
+                     "FieldValue":""
+                  }
+               ],
+               "EventLists":[
+
+               ],
+               "Options":{
+                  "ButtonName":"Approve",
+                  "ButtonColor":"btn-primary",
+                  "Sequence":"1",
+                  "ConditionFieldCode":null,
+                  "ConditionFieldValue":null,
+                  "ConditionalActionEvent":false,
+                  "SystemAction":true,
+                  "Condition":{
+                     "Field":null,
+                     "FieldCode":null,
+                     "Operator":null,
+                     "Value":null,
+                     "ConditionGroups":[
+
+                     ]
+                  },
+                  "AllowFieldValidation":false,
+                  "FieldValidationGroups":[
+
+                  ],
+                  "TitleLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "ButtonNameLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "IsMModule":false
+               },
+               "NotificationCount":0
+            },
+            {
+               "WorkflowActionID":177250,
+               "Title":"Return to Superior",
+               "ActionType":"standard",
+               "DeleteLock":false,
+               "Events":[
+                  {
+                     "EventType":"GotoStage",
+                     "WorkflowStageID":162545,
+                     "StageTitle":"Received by Immediate Superior",
+                     "FieldCode":"",
+                     "FieldValue":""
+                  }
+               ],
+               "EventLists":[
+
+               ],
+               "Options":{
+                  "ButtonName":"Return to Superior",
+                  "ButtonColor":"btn-default",
+                  "Sequence":null,
+                  "ConditionFieldCode":null,
+                  "ConditionFieldValue":null,
+                  "ConditionalActionEvent":false,
+                  "SystemAction":false,
+                  "Condition":{
+                     "Field":null,
+                     "FieldCode":null,
+                     "Operator":null,
+                     "Value":null,
+                     "ConditionGroups":[
+
+                     ]
+                  },
+                  "AllowFieldValidation":false,
+                  "FieldValidationGroups":[
+                     {
+                        "Validations":[
+                           {
+                              "ValidationType":"mandatory",
+                              "FieldCode":null
+                           }
+                        ]
+                     }
+                  ],
+                  "TitleLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "ButtonNameLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "IsMModule":true
+               },
+               "NotificationCount":0
+            },
+            {
+               "WorkflowActionID":177251,
+               "Title":"Return to HOD",
+               "ActionType":"standard",
+               "DeleteLock":false,
+               "Events":[
+                  {
+                     "EventType":"GotoStage",
+                     "WorkflowStageID":162546,
+                     "StageTitle":"HOD Approval",
+                     "FieldCode":"",
+                     "FieldValue":""
+                  }
+               ],
+               "EventLists":[
+
+               ],
+               "Options":{
+                  "ButtonName":"Return to HOD",
+                  "ButtonColor":"btn-default",
+                  "Sequence":null,
+                  "ConditionFieldCode":null,
+                  "ConditionFieldValue":null,
+                  "ConditionalActionEvent":false,
+                  "SystemAction":false,
+                  "Condition":{
+                     "Field":null,
+                     "FieldCode":null,
+                     "Operator":null,
+                     "Value":null,
+                     "ConditionGroups":[
+
+                     ]
+                  },
+                  "AllowFieldValidation":false,
+                  "FieldValidationGroups":[
+                     {
+                        "Validations":[
+                           {
+                              "ValidationType":"mandatory",
+                              "FieldCode":null
+                           }
+                        ]
+                     }
+                  ],
+                  "TitleLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "ButtonNameLabel":{
+                     "ValueType":null,
+                     "Code":null,
+                     "Details":[
+
+                     ]
+                  },
+                  "IsMModule":true
+               },
+               "NotificationCount":0
+            }
+         ],
+         "SequentialCompleteActions":[
+
+         ],
+         "Parallels":[
+
+         ],
+         "ParallelCompletes":[
+
+         ],
+         "ParallelDeleteLock":true,
+         "ParallelSets":[
+
+         ]
+      },
+      {
+         "WorkflowVersionID":86090,
+         "WorkflowStageID":162384,
+         "WorkflowStageDraftID":162384,
+         "Title":"Approved",
+         "DisplayName":"Approved",
+         "StageType":"Standard",
+         "SeqNo":5,
+         "IsSLA":null,
+         "IsEndStage":true,
+         "IsApprovedStage":true,
+         "HasStageReview":false,
+         "IsAllowDelegation":false,
+         "HasSubStage":null,
+         "NotificationCount":0,
+         "ReminderCount":0,
+         "IntegrationCount":0,
+         "DeleteLock":true,
+         "RequestorSubLock":false,
+         "Options":{
+            "DisplaySequence":0,
+            "IsAllowComment":false,
+            "IsAllowCommentInGeneralComment":false,
+            "IsAllowCommentCustomize":false,
+            "IsAllowEditOtherFields":false,
+            "IsAllowTrigger":false,
+            "IsSavableByApprover":false,
+            "HasNoAssigneeAction":false,
+            "NoAssigneeActionEvents":null,
+            "HasSameApproverAction":false,
+            "HasAvoidSkipSameApproverAction":false,
+            "SameApproverActionEvents":null,
+            "IsMandatoryComment":false,
+            "ActionButtons":null,
+            "MinCharacter":0,
+            "CustomizeComments":[
+
+            ],
+            "ApproverStages":[
+
+            ],
+            "AssignOption":null,
+            "AssignOptionNumber":0,
+            "TitleLabel":{
+               "ValueType":"custom",
+               "Code":null,
+               "Details":[
+                  {
+                     "Code":null,
+                     "Language":"en-US",
+                     "Value":"Approved",
+                     "OldValue":null
+                  },
+                  {
+                     "Code":null,
+                     "Language":"zh-CN",
+                     "Value":"已批准",
+                     "OldValue":null
+                  },
+                  {
+                     "Code":null,
+                     "Language":"id-ID",
+                     "Value":"Disetujui",
+                     "OldValue":null
+                  },
+                  {
+                     "Code":null,
+                     "Language":"ms-MY",
+                     "Value":"Approved",
+                     "OldValue":null
+                  }
+               ]
+            },
+            "DisplayLabel":{
+               "ValueType":"custom",
+               "Code":null,
+               "Details":[
+                  {
+                     "Code":null,
+                     "Language":"en-US",
+                     "Value":"Approved",
+                     "OldValue":null
+                  },
+                  {
+                     "Code":null,
+                     "Language":"zh-CN",
+                     "Value":"已批准",
+                     "OldValue":null
+                  },
+                  {
+                     "Code":null,
+                     "Language":"id-ID",
+                     "Value":"Disetujui",
+                     "OldValue":null
+                  },
+                  {
+                     "Code":null,
+                     "Language":"ms-MY",
+                     "Value":"Approved",
+                     "OldValue":null
+                  }
+               ]
+            },
+            "IsMModule":false,
+            "SkipMyTaskForSameRequestorApprover":false
+         },
+         "AssignedTos":[
+
+         ],
+         "SequentialAssignedTos":null,
+         "Readers":[
+
+         ],
+         "WorkflowStageTriggers":[
+
+         ],
+         "WorkflowStageSLA":null,
+         "SubStage":null,
+         "WorkflowStageSubs":[
+
+         ],
+         "Actions":[
+
+         ],
+         "SequentialCompleteActions":[
+
+         ],
+         "Parallels":[
+
+         ],
+         "ParallelCompletes":[
+
+         ],
+         "ParallelDeleteLock":true,
+         "ParallelSets":[
+
+         ]
+      }
+   ]
+}
